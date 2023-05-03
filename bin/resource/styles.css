@@ -1,0 +1,87 @@
+.post-background{
+    -fx-background-color: #fff;
+    -fx-background-radius: 15;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1) , 5.0, 0.0, 0.0, 5.0);
+}
+
+.window{
+	-fx-opacity: 2.0;
+	-fx-background-radius: 30;
+}
+
+.anchor-background{
+	 -fx-background-radius: 30;
+	
+}
+
+.sidebar-fx:hover{
+	
+  -fx-background-color:white;
+  -fx-text-fill:black;
+  -fx-font-weight:bold; 
+	
+
+     -fx-background-color: #fff;
+     -fx-background-radius: 50;
+     -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1) , 5.0, 0.0, 0.0, 5.0);
+     -fx-border-width: 1;
+     -fx-border-color:#B8B9BB;
+     -fx-border-radius: 50;
+
+}
+
+.hover:hover{
+     -fx-background-radius: 50;
+     -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1) , 5.0, 0.0, 0.0, 5.0);
+     -fx-border-width: 1;
+     -fx-border-color:#B8B9BB;
+     -fx-border-radius: 50;
+}
+
+
+.reactions-container{
+     -fx-background-color: #fff;
+     -fx-background-radius: 50;
+     -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1) , 5.0, 0.0, 0.0, 5.0);
+     -fx-border-width: 1;
+     -fx-border-color:#B8B9BB;
+     -fx-border-radius: 50;
+}
+
+
+
+.top-border{
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #606266;
+}
+
+#my-button {
+    -fx-border-width: 2;
+    -fx-border-color: #FFE4C4; 
+    -fx-background-color: #FFDAB9; /* 鼠标移出 */
+    cursor: pointer; 
+}
+
+/* I want MouseMoved button background-color effect 鼠标移入 */
+#my-button:hover {
+    -fx-background-color: #FFC125; 
+}
+
+#my-button:pressed {
+    -fx-background-color: #FFDAB9; /* maybe some other color */
+}
+
+.menuItem:hover{
+	-fx-border-color: #668099;
+	-fx-border-width: 8px, 0px, 3px, 8px;
+}
+
+.sidebarItem:hover{
+	-fx-background-color: #146886;
+	-fx-border-color: WHITE;
+	-fx-border-width: 8px, 0px, 8px, 3px;
+}
+
+
+
+

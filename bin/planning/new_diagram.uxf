@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>246</x>
+      <y>438</y>
+      <w>84</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;120.0;70.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>462</x>
+      <y>270</y>
+      <w>108</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;70.0;160.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>342</x>
+      <y>270</y>
+      <w>90</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;70.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>78</x>
+      <y>474</y>
+      <w>174</w>
+      <h>384</h>
+    </coordinates>
+    <panel_attributes>accounts::User
+--
+-serialVersionUID = 1L: long
+-id: Long
+-name: String
+-userName: String
+-email: String
+-password: String
+-appUserRole: AppUserRole
+-phoneNum: String
+-age: String
+-state: String
+-firstName: String
+-lastName: String
+--
++User(String email, String password): ctor
++getId(): Long
++setId(Long id): void
++getName(): String
++setName(String name): void
++getUserName(): String
++setUserName(String userName): void
++getEmail(): String
++setEmail(String email): void
++getPassword(): String
++setPassword(String password): void
++getAppUserRole(): AppUserRole
++setPhoneNumber(String phone): void
++getPhoneNumber(): String
++setAge(String age): void
++getAge(): String
++setState(String state): void
++getState(): String
++setfName(String firstName): void
++getFname(): String
++setlName(String lastName): void
++getlName(): String
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>468</y>
+      <w>150</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>accounts::Post
+--
+-user: User
+-caption: String
+-date: Date
+-mediaSrc: String
+--
++Post(): ctor
++getUserOfPost(): User
++setUserOfPost(User user): void
++getCaption(): String
++setCaption(String caption): void
++getDate(): Date
++setDate(Date date): void
++getMediaSrc(): String
++setMediaSrc(String mediaSrc): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>360</y>
+      <w>186</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>accounts::Posts
+--
+-allPosts: LinkedList&lt;Post&gt;
+--
++Posts(): ctor
++addPost(Post post): void
++getAllPosts(): LinkedList&lt;Post&gt;
++setAllPosts(LinkedList&lt;Post&gt; allPosts): void
++getUserPosts(User user): LinkedList&lt;Post&gt;
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>264</x>
+      <y>354</y>
+      <w>162</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>accounts::Users
+--
+-allUsers: TreeMap&lt;String, User&gt;
+--
+-Users(): ctor
++getAllUsers(): TreeMap&lt;String, User&gt;
++addAccount(User user): void
++findAcct(String email): User
++display(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>348</x>
+      <y>132</y>
+      <w>210</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>data::Database
+--
+-allUsers: TreeMap&lt;String, User&gt;
+-allPosts: LinkedList&lt;Post&gt;
+-data = null: Database
+--
++Database(): ctor
++getAllUsers(): TreeMap&lt;String, User&gt;
++getAllPosts(): LinkedList&lt;Post&gt;
++setAllUsers(TreeMap&lt;String, User&gt; allUsers): void
++setAllPosts(LinkedList&lt;Post&gt; allPosts): void
++getInstance(): Database
++load(): Database
++save(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>564</x>
+      <y>450</y>
+      <w>114</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;170.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>654</x>
+      <y>0</y>
+      <w>114</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>Login Screen
+-
+-</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>42</y>
+      <w>258</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>410.0;20.0;10.0;20.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>534</x>
+      <y>690</y>
+      <w>138</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>accounts::Likes
+--
+-user: User
+-likes: int
+--
++Likes(): ctor
++getUserLiked(): User
++setUserLiked(User user): void
++getLikes(): int
++addLike(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>624</y>
+      <w>144</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>220.0;10.0;220.0;90.0;10.0;110.0</additional_attributes>
+  </element>
+</diagram>

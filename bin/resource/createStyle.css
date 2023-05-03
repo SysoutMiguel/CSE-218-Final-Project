@@ -1,0 +1,11 @@
+.curveTF{
+	-fx-background-radius: 30;
+}
+
+.invisible-Anchor{
+	-fx-background-color: transparent;
+}
+
+.spell-error {
+    -fx-effect: dropshadow(gaussian, red, 2, 0, 0, 0);
+}

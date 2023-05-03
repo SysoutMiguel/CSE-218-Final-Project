@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="769.0" styleClass="window" stylesheets="@../resource/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Login">
+   <children>
+      <ImageView fitHeight="594.0" fitWidth="862.0" layoutX="-194.0" layoutY="-68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/resource/jakob-owens-WUmb_eBrpjs-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="667.0" prefHeight="514.0" prefWidth="107.0" style="-fx-background-color: #c52fe9;" styleClass="sidebar-fx" stylesheets="@../resource/styles.css" />
+      <AnchorPane layoutX="399.0" layoutY="96.0" prefHeight="243.0" prefWidth="379.0" style="-fx-background-color: #1b8d9c;" stylesheets="@../resource/styles.css">
+         <children>
+            <AnchorPane layoutX="7.0" layoutY="-14.0" prefHeight="243.0" prefWidth="379.0" style="-fx-background-color: #c94caf; -fx-border-radius: 30; -fx-border-style: solid;" stylesheets="@../resource/styles.css">
+               <styleClass>
+                  <String fx:value="anchor-background" />
+                  <String fx:value="hover" />
+               </styleClass>
+               <children>
+                  <TextField fx:id="emailField" layoutX="115.0" layoutY="109.0" promptText="E-mail" styleClass="post-background" stylesheets="@../resource/styles.css" />
+                  <PasswordField fx:id="passwordField" layoutX="117.0" layoutY="144.0" promptText="Password" styleClass="post-background" stylesheets="@../resource/styles.css" />
+                  <Button layoutX="204.0" layoutY="204.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="76.0" styleClass="reactions-container" stylesheets="@../resource/styles.css" text="Login" />
+                  <Button layoutX="90.0" layoutY="204.0" mnemonicParsing="false" onAction="#createAccount" styleClass="reactions-container" stylesheets="@../resource/styles.css" text="Create Account" />
+                  <Button layoutX="313.0" layoutY="14.0" mnemonicParsing="false" style="-fx-opacity: 2;" styleClass="reactions-container" stylesheets="@../resource/styles.css" textFill="TRANSPARENT">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resource/log-out.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="28.0" layoutY="31.0" lineSpacing="10.0" prefHeight="47.0" prefWidth="175.0" styleClass="sidebar-fx" stylesheets="@../resource/styles.css" text="Login" textFill="#1b2c1ce5">
+                     <font>
+                        <Font name="Bookman Old Style" size="54.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+         <styleClass>
+            <String fx:value="anchor-background" />
+            <String fx:value="hover" />
+         </styleClass>
+      </AnchorPane>
+   </children>
+</AnchorPane>

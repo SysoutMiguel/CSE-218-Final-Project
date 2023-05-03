@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.CreateAccountController">
+   <children>
+      <SplitPane prefHeight="400.0" prefWidth="161.0">
+         <items>
+            <AnchorPane prefHeight="398.0" prefWidth="178.0" style="-fx-background-color: #8381f2;">
+               <children>
+                  <Label layoutX="51.0" layoutY="16.0" lineSpacing="0.2" prefHeight="366.0" prefWidth="42.0" text="TWTTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Footlight MT Light" size="47.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <Label layoutX="254.0" layoutY="14.0" lineSpacing="0.6" prefHeight="62.0" prefWidth="218.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfFirst" layoutX="255.0" layoutY="91.0" styleClass="curveTF" stylesheets="@../resource/createStyle.css">
+         <padding>
+            <Insets bottom="5.0" left="30.0" right="70.0" top="5.0" />
+         </padding>
+      </TextField>
+      <TextField fx:id="tfLast" layoutX="255.0" layoutY="146.0" styleClass="curveTF" stylesheets="@../resource/createStyle.css">
+         <padding>
+            <Insets bottom="5.0" left="30.0" right="70.0" top="5.0" />
+         </padding>
+      </TextField>
+      <TextField fx:id="tfEmail" layoutX="255.0" layoutY="208.0" styleClass="curveTF" stylesheets="@../resource/createStyle.css">
+         <padding>
+            <Insets bottom="5.0" left="30.0" right="70.0" top="5.0" />
+         </padding>
+      </TextField>
+      <TextField fx:id="tfPass" layoutX="253.0" layoutY="265.0" styleClass="curveTF" stylesheets="@../resource/createStyle.css">
+         <padding>
+            <Insets bottom="5.0" left="30.0" right="70.0" top="5.0" />
+         </padding>
+      </TextField>
+      <TextField fx:id="tfRePass" layoutX="255.0" layoutY="320.0" styleClass="curveTF" stylesheets="@../resource/createStyle.css">
+         <padding>
+            <Insets bottom="5.0" left="30.0" right="70.0" top="5.0" />
+         </padding>
+      </TextField>
+      <PasswordField fx:id="pwPass" layoutX="253.0" layoutY="265.0" styleClass="curveTF" stylesheets="@../resource/createStyle.css">
+         <padding>
+            <Insets bottom="5.0" left="30.0" right="70.0" top="5.0" />
+         </padding>
+      </PasswordField>
+      <PasswordField fx:id="pwRePass" layoutX="253.0" layoutY="320.0" styleClass="curveTF" stylesheets="@../resource/createStyle.css">
+         <padding>
+            <Insets bottom="5.0" left="30.0" right="70.0" top="5.0" />
+         </padding>
+      </PasswordField>
+      <Button layoutX="313.0" layoutY="361.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="26.0" prefWidth="115.0" style="-fx-background-color: #8381f2;" styleClass="curveTF" stylesheets="@../resource/createStyle.css" text="Create Account" />
+      <CheckBox fx:id="showPass" layoutX="505.0" layoutY="272.0" mnemonicParsing="false" onAction="#changeVisibilityOfPass" prefHeight="17.0" prefWidth="95.0" text="Show" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="showRePass" layoutX="505.0" layoutY="327.0" mnemonicParsing="false" onAction="#changeVisibilityOfRePass" prefHeight="17.0" prefWidth="95.0" text="Show" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="259.0" layoutY="68.0" text="First Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="130.0" text="Last Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="192.0" text="Email" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="245.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="306.0" text="Re-Type Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
